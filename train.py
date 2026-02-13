@@ -1,14 +1,12 @@
 from imports import *
 from data import AudioDatasetFromSingleFolder
 from model import FakeBenchmark
-import os
-from torch.utils.data import Dataset, DataLoader
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 root = "."
-batch_size = 64
-epochs = 20
+batch_size = 126
+epochs = 30
 lr = 1e-3
 n_fft = 512
 
