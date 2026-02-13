@@ -1,9 +1,6 @@
 from imports import *
 from data import AudioDatasetFromSingleFolder
 from model import FakeBenchmark
-from torch.utils.data import DataLoader
-import os
-import torch
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
